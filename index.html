@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+
+    <title>Check Mệnh Khuyết</title>
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h2>Kiểm tra Mệnh khuyết</h2>
+
+      <div class="card__size">
+        <h3>Năm:</h3>
+        <select id="canNam">
+          <option value="Giáp">Giáp</option>
+          <option value="Ất">Ất</option>
+          <option value="Bính">Bính</option>
+          <option value="Đinh">Đinh</option>
+          <option value="Mậu">Mậu</option>
+          <option value="Kỷ">Kỷ</option>
+          <option value="Canh">Canh</option>
+          <option value="Tân">Tân</option>
+          <option value="Nhâm">Nhâm</option>
+          <option value="Quý">Quý</option>
+        </select>
+
+        <select id="chiNam">
+          <option value="Tý">Tý</option>
+          <option value="Sửu">Sửu</option>
+          <option value="Dần">Dần</option>
+          <option value="Mão">Mão</option>
+          <option value="Thìn">Thìn</option>
+          <option value="Tỵ">Tỵ</option>
+          <option value="Ngọ">Ngọ</option>
+          <option value="Mùi">Mùi</option>
+          <option value="Thân">Thân</option>
+          <option value="Dậu">Dậu</option>
+          <option value="Tuất">Tuất</option>
+          <option value="Hợi">Hợi</option>
+        </select>
+      </div>
+      <div class="card__size">
+        <h3>Tháng:</h3>
+        <select id="canThang">
+          <option value="Giáp">Giáp</option>
+          <option value="Ất">Ất</option>
+          <option value="Bính">Bính</option>
+          <option value="Đinh">Đinh</option>
+          <option value="Mậu">Mậu</option>
+          <option value="Kỷ">Kỷ</option>
+          <option value="Canh">Canh</option>
+          <option value="Tân">Tân</option>
+          <option value="Nhâm">Nhâm</option>
+          <option value="Quý">Quý</option>
+        </select>
+
+        <select id="chiThang">
+          <option value="Tý">Tý</option>
+          <option value="Sửu">Sửu</option>
+          <option value="Dần">Dần</option>
+          <option value="Mão">Mão</option>
+          <option value="Thìn">Thìn</option>
+          <option value="Tỵ">Tỵ</option>
+          <option value="Ngọ">Ngọ</option>
+          <option value="Mùi">Mùi</option>
+          <option value="Thân">Thân</option>
+          <option value="Dậu">Dậu</option>
+          <option value="Tuất">Tuất</option>
+          <option value="Hợi">Hợi</option>
+        </select>
+      </div>
+      <div class="card__size">
+        <h3>Ngày:</h3>
+        <select id="canNgay">
+          <option value="Giáp">Giáp</option>
+          <option value="Ất">Ất</option>
+          <option value="Bính">Bính</option>
+          <option value="Đinh">Đinh</option>
+          <option value="Mậu">Mậu</option>
+          <option value="Kỷ">Kỷ</option>
+          <option value="Canh">Canh</option>
+          <option value="Tân">Tân</option>
+          <option value="Nhâm">Nhâm</option>
+          <option value="Quý">Quý</option>
+        </select>
+
+        <select id="chiNgay">
+          <option value="Tý">Tý</option>
+          <option value="Sửu">Sửu</option>
+          <option value="Dần">Dần</option>
+          <option value="Mão">Mão</option>
+          <option value="Thìn">Thìn</option>
+          <option value="Tỵ">Tỵ</option>
+          <option value="Ngọ">Ngọ</option>
+          <option value="Mùi">Mùi</option>
+          <option value="Thân">Thân</option>
+          <option value="Dậu">Dậu</option>
+          <option value="Tuất">Tuất</option>
+          <option value="Hợi">Hợi</option>
+        </select>
+      </div>
+
+      <div class="card__size">
+        <h3>Giờ:</h3>
+        <select id="canGio">
+          <option value="Giáp">Giáp</option>
+          <option value="Ất">Ất</option>
+          <option value="Bính">Bính</option>
+          <option value="Đinh">Đinh</option>
+          <option value="Mậu">Mậu</option>
+          <option value="Kỷ">Kỷ</option>
+          <option value="Canh">Canh</option>
+          <option value="Tân">Tân</option>
+          <option value="Nhâm">Nhâm</option>
+          <option value="Quý">Quý</option>
+        </select>
+
+        <select id="chiGio">
+          <option value="Tý">Tý</option>
+          <option value="Sửu">Sửu</option>
+          <option value="Dần">Dần</option>
+          <option value="Mão">Mão</option>
+          <option value="Thìn">Thìn</option>
+          <option value="Tỵ">Tỵ</option>
+          <option value="Ngọ">Ngọ</option>
+          <option value="Mùi">Mùi</option>
+          <option value="Thân">Thân</option>
+          <option value="Dậu">Dậu</option>
+          <option value="Tuất">Tuất</option>
+          <option value="Hợi">Hợi</option>
+        </select>
+      </div>
+
+      <div class="card__action">
+        <button onclick="main()">Kiểm Tra</button>
+        <div class="result">
+          <h6>Kim: <span id="diemKim"></span></h6>
+          <h6>Mộc: <span id="diemMoc"></span></h6>
+          <h6>Thuỷ: <span id="diemThuy"></span></h6>
+          <h6>Hoả: <span id="diemHoa"></span></h6>
+          <h6>Thổ: <span id="diemTho"></span></h6>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
