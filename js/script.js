@@ -4,6 +4,8 @@ let pointOfThuy = 0;
 let pointOfHoa = 0;
 let pointOfTho = 0;
 
+let resPoint = [pointOfKim, pointOfMoc, pointOfThuy, pointOfHoa, pointOfTho];
+
 function thienCan2NguHanh(val) {
   switch (val) {
     case "Giáp":
@@ -106,7 +108,7 @@ function toPoint(resCan, resChi) {
   }
 }
 
-function main() {
+function calculatePoint() {
   const chiNam = $("#chiNam").val();
   const canNam = $("#canNam").val();
   const chiThang = $("#chiThang").val();
@@ -168,4 +170,24 @@ function main() {
   document.getElementById("diemThuy").innerHTML = pointOfThuy;
   document.getElementById("diemHoa").innerHTML = pointOfHoa;
   document.getElementById("diemTho").innerHTML = pointOfTho;
+}
+
+function resetPoint() {
+  pointOfHoa = 0;
+  pointOfTho = 0;
+  pointOfThuy = 0;
+  pointOfMoc = 0;
+  pointOfKim = 0;
+
+  console.clear();
+
+  document.getElementById("diemKim").innerHTML = pointOfKim;
+  document.getElementById("diemMoc").innerHTML = pointOfMoc;
+  document.getElementById("diemThuy").innerHTML = pointOfThuy;
+  document.getElementById("diemHoa").innerHTML = pointOfHoa;
+  document.getElementById("diemTho").innerHTML = pointOfTho;
+}
+
+function evaluatePoint(array) {
+  console.log(array);
 }

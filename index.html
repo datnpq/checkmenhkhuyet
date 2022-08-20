@@ -141,14 +141,21 @@
       </div>
 
       <div class="card__action">
-        <button onclick="main()">Kiểm Tra</button>
-        <div class="result">
+        <button onclick="calculatePoint(this)">Check</button>
+        <button onclick="resetPoint(this)">Reset</button>
+        <button onclick="evaluatePoint(resPoint)">Evaluate</button>
+
+        <div class="results">
+          <br>
           <h6>Kim: <span id="diemKim"></span></h6>
           <h6>Mộc: <span id="diemMoc"></span></h6>
           <h6>Thuỷ: <span id="diemThuy"></span></h6>
           <h6>Hoả: <span id="diemHoa"></span></h6>
           <h6>Thổ: <span id="diemTho"></span></h6>
         </div>
+
+
+
       </div>
     </div>
   </body>
